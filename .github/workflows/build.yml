@@ -1,0 +1,36 @@
+name: Build and Deploy Bolt Site
+
+on:
+  push:
+    branches:
+      - main # Changez "main" en votre branche principale si nécessaire
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code from the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16" # Vérifiez la version Node.js requise par Bolt
+
+      # Install dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Build the site
+      - name: Build Site
+        run: npm run build # Vérifiez que la commande "build" est correcte pour Bolt
+
+      # Deploy to GitHub Pages (optional, if you're hosting on GitHub Pages)
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public # Changez "public" si Bolt génère un autre dossier
