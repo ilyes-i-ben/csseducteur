@@ -1,5 +1,5 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import React from "react";
+import { Helmet } from "react-helmet-async";
 
 interface SEOProps {
   title: string;
@@ -13,8 +13,8 @@ export function SEO({
   title,
   description,
   keywords = [],
-  image = 'https://images.unsplash.com/photo-1555066931-4365d14bab8c',
-  url = 'https://csseducteur.com',
+  image = "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+  url = "https://csseducteur.com",
 }: SEOProps) {
   const siteTitle = `${title} | CSSeducteur`;
 
@@ -22,7 +22,10 @@ export function SEO({
     <Helmet>
       <title>{siteTitle}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content={['CSSeducteur', 'CSS framework', ...keywords].join(', ')} />
+      <meta
+        name="keywords"
+        content={["CSSeducteur", "CSS framework", ...keywords].join(", ")}
+      />
 
       {/* Open Graph */}
       <meta property="og:title" content={siteTitle} />
@@ -40,13 +43,17 @@ export function SEO({
       {/* Schema.org */}
       <script type="application/ld+json">
         {JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'WebSite',
-          name: 'CSSeducteur',
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "CSSeducteur",
           description,
           url,
         })}
       </script>
+      <meta
+        name="google-site-verification"
+        content="Vr2OMRt0BsMdmjgHXIs54IJN36IeB-Y6fU3H63r16q8"
+      />
     </Helmet>
   );
 }
