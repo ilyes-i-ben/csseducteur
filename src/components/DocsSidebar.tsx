@@ -1,29 +1,29 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const sections = [
   {
-    title: 'Getting Started',
+    title: "Commencer",
     items: [
-      { href: '/docs', label: 'Introduction' },
-      { href: '/docs/installation', label: 'Installation' },
+      { href: "/docs", label: "Introduction" },
+      { href: "/docs/installation", label: "Installation" },
     ],
   },
   {
-    title: 'Core Concepts',
+    title: "Concepts de base ",
     items: [
-      { href: '/docs/utility-classes', label: 'Utility Classes' },
-      { href: '/docs/responsive-design', label: 'Responsive Design' },
-      { href: '/docs/dark-mode', label: 'Dark Mode' },
+      { href: "/docs/utility-classes", label: "Classes Utilitaire" },
+      { href: "/docs/responsive-design", label: "Design Responsif" },
+      { href: "/docs/dark-mode", label: "Mode Sombre" },
     ],
   },
   {
-    title: 'Components',
+    title: "Composantes",
     items: [
-      { href: '/docs/buttons', label: 'Buttons' },
-      { href: '/docs/cards', label: 'Cards' },
-      { href: '/docs/forms', label: 'Forms' },
-      { href: '/docs/navigation', label: 'Navigation' },
+      { href: "/docs/buttons", label: "Bouttons" },
+      { href: "/docs/cards", label: "Cartes" },
+      { href: "/docs/forms", label: "Formulaires" },
+      { href: "/docs/navigation", label: "Navigation" },
     ],
   },
 ];
@@ -45,8 +45,8 @@ export function DocsSidebar() {
                     className={({ isActive }) =>
                       `block px-3 py-2 text-sm rounded-md ${
                         isActive
-                          ? 'bg-indigo-50 text-indigo-600 dark:bg-indigo-900 dark:text-indigo-400'
-                          : 'text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-800'
+                          ? "bg-indigo-50 text-indigo-600 dark:bg-indigo-900 dark:text-indigo-400"
+                          : "text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-800"
                       }`
                     }
                   >

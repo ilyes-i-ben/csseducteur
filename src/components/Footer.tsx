@@ -1,5 +1,5 @@
-import React from 'react';
-import { Github, Twitter, Linkedin } from 'lucide-react';
+import React from "react";
+import { Github, Twitter, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -7,9 +7,11 @@ export function Footer() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <h2 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">CSSeducteur</h2>
+            <h2 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+              CSSeducteur
+            </h2>
             <p className="mt-2 text-gray-600 dark:text-gray-400">
-              The most elegant way to style your web applications.
+              la plus elegante des manieres pour styliser votre site .
             </p>
           </div>
           <div>
@@ -18,13 +20,19 @@ export function Footer() {
             </h3>
             <ul className="mt-4 space-y-4">
               <li>
-                <a href="/docs" className="text-gray-600 dark:text-gray-400 hover:text-indigo-500">
+                <a
+                  href="/docs"
+                  className="text-gray-600 dark:text-gray-400 hover:text-indigo-500"
+                >
                   Documentation
                 </a>
               </li>
               <li>
-                <a href="/examples" className="text-gray-600 dark:text-gray-400 hover:text-indigo-500">
-                  Examples
+                <a
+                  href="/examples"
+                  className="text-gray-600 dark:text-gray-400 hover:text-indigo-500"
+                >
+                  Exemples
                 </a>
               </li>
             </ul>

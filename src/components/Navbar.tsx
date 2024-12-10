@@ -1,7 +1,7 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { Moon, Sun, Menu, X } from 'lucide-react';
-import type { Theme } from '../types/theme';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { Moon, Sun, Menu, X } from "lucide-react";
+import type { Theme } from "../types/theme";
 
 interface NavbarProps {
   theme: Theme;
@@ -12,11 +12,11 @@ export function Navbar({ theme, toggleTheme }: NavbarProps) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const navItems = [
-    { to: '/', label: 'Home' },
-    { to: '/about', label: 'About' },
-    { to: '/docs', label: 'Docs' },
-    { to: '/examples', label: 'Examples' },
-    { to: '/contact', label: 'Contact' },
+    { to: "/", label: "Acceuil" },
+    { to: "/about", label: "A-Propos" },
+    { to: "/docs", label: "Documentation" },
+    { to: "/examples", label: "Exemples" },
+    { to: "/contact", label: "Contact" },
   ];
 
   return (
@@ -24,7 +24,10 @@ export function Navbar({ theme, toggleTheme }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <NavLink to="/" className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+            <NavLink
+              to="/"
+              className="text-2xl font-bold text-indigo-600 dark:text-indigo-400"
+            >
               CSSeducteur
             </NavLink>
           </div>
@@ -37,7 +40,9 @@ export function Navbar({ theme, toggleTheme }: NavbarProps) {
                 to={item.to}
                 className={({ isActive }) =>
                   `${
-                    isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-gray-700 dark:text-gray-300'
+                    isActive
+                      ? "text-indigo-600 dark:text-indigo-400"
+                      : "text-gray-700 dark:text-gray-300"
                   } hover:text-indigo-500 dark:hover:text-indigo-300 transition-colors`
                 }
               >
@@ -49,7 +54,7 @@ export function Navbar({ theme, toggleTheme }: NavbarProps) {
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               aria-label="Toggle theme"
             >
-              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
             </button>
           </div>
 
@@ -76,7 +81,9 @@ export function Navbar({ theme, toggleTheme }: NavbarProps) {
                 to={item.to}
                 className={({ isActive }) =>
                   `${
-                    isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-gray-700 dark:text-gray-300'
+                    isActive
+                      ? "text-indigo-600 dark:text-indigo-400"
+                      : "text-gray-700 dark:text-gray-300"
                   } block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors`
                 }
                 onClick={() => setIsOpen(false)}
@@ -88,7 +95,7 @@ export function Navbar({ theme, toggleTheme }: NavbarProps) {
               onClick={toggleTheme}
               className="w-full text-left px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
-              {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+              {theme === "dark" ? "Light Mode" : "Dark Mode"}
             </button>
           </div>
         </div>
