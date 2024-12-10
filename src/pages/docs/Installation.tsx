@@ -1,36 +1,44 @@
-import React from 'react';
-import { SEO } from '../../components/SEO';
-import { CodeBlock } from '../../components/CodeBlock';
+import React from "react";
+import { SEO } from "../../components/SEO";
+import { CodeBlock } from "../../components/CodeBlock";
 
 export function Installation() {
   return (
     <>
       <SEO
         title="Documentation - Installation"
-        description="Learn how to install and set up CSSeducteur in your project."
-        keywords={['installation', 'setup', 'configuration', 'CSS framework']}
+        description="Apprenez à installer et configurer CSSeducteur dans votre projet."
+        keywords={["installation", "configuration", "framework CSS"]}
       />
       <div className="prose dark:prose-invert max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Installation</h1>
-        
-        <h2 className="text-2xl font-semibold mt-8 mb-4">NPM Installation</h2>
+        <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+          Installation
+        </h1>
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Installation via NPM
+        </h2>
         <CodeBlock
           code={`npm install csseducteur
-# or with yarn
+# ou avec yarn
 yarn add csseducteur`}
           language="bash"
         />
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">Configuration</h2>
-        <p>Add CSSeducteur to your project's entry point:</p>
+        <p>Ajoutez CSSeducteur au point d'entrée de votre projet :</p>
         <CodeBlock
-          code={`// styles.css or main.css
+          code={`// styles.css ou main.css
 @import 'csseducteur/dist/csseducteur.css';`}
           language="css"
         />
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">CDN Usage</h2>
-        <p>Alternatively, you can use CSSeducteur directly from a CDN:</p>
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Utilisation via CDN
+        </h2>
+        <p>
+          Vous pouvez également utiliser CSSeducteur directement depuis un CDN :
+        </p>
         <CodeBlock
           code={`<link 
   rel="stylesheet" 
@@ -38,10 +46,12 @@ yarn add csseducteur`}
 />`}
         />
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">Next Steps</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-4">Prochaines Étapes</h2>
         <p>
-          After installation, you can start using CSSeducteur's utility classes and components in your HTML.
-          Check out our examples section to see how to create common UI patterns.
+          Après l'installation, vous pouvez commencer à utiliser les classes
+          utilitaires et les composants de CSSeducteur dans votre HTML.
+          Consultez notre section d'exemples pour découvrir comment créer des
+          modèles d'interface utilisateur courants.
         </p>
       </div>
     </>
