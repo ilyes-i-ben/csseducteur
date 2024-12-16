@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 interface SEOProps {
   title: string;
@@ -14,7 +14,7 @@ export function SEO({
   description,
   keywords = [],
   image = "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-  url = "https://csseducteur.com",
+  url = "https://csseducteur.me",
 }: SEOProps) {
   const siteTitle = `${title} | CSSeducteur`;
 

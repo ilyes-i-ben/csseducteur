@@ -1,11 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "gatsby";
 
 const sections = [
   {
     title: "Commencer",
     items: [
-      { href: "/docs", label: "Introduction" },
+      { href: "/docs/introduction", label: "Introduction" },
       { href: "/docs/installation", label: "Installation" },
     ],
   },
@@ -34,24 +34,23 @@ export function DocsSidebar() {
       <div className="h-full overflow-y-auto py-4 px-3">
         {sections.map((section) => (
           <div key={section.title} className="mb-8">
-            <h5 className="mb-3 text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wider">
+            <h5 className="mb-3 text-sm font-semibold text-gray-900 uppercase tracking-wider">
               {section.title}
             </h5>
             <ul className="space-y-2">
               {section.items.map((item) => (
                 <li key={item.href}>
-                  <NavLink
+                  <Link
                     to={item.href}
-                    className={({ isActive }) =>
-                      `block px-3 py-2 text-sm rounded-md ${
-                        isActive
-                          ? "bg-indigo-50 text-indigo-600 dark:bg-indigo-900 dark:text-indigo-400"
-                          : "text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-800"
-                      }`
-                    }
+                    getProps={({ isCurrent }) => ({
+                      className: `${isCurrent
+                        ? "text-indigo-600"
+                        : "text-gray-700"
+                        } block px-3 py-2 text-sm rounded-md text-gray-600 hover:bg-gray-50`
+                    })}
                   >
                     {item.label}
-                  </NavLink>
+                  </Link>
                 </li>
               ))}
             </ul>
