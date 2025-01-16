@@ -23,7 +23,10 @@ const config: GatsbyConfig = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-transformer-remark",
+    // {
+    //   resolve: "gatsby-transformer-remark",
+    //   options: {},
+    // },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -41,6 +44,14 @@ const config: GatsbyConfig = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blogs",
+        path: "./src/blogs/",
+      },
+      __key: "blogs",
     },
     {
       resolve: "gatsby-plugin-manifest",

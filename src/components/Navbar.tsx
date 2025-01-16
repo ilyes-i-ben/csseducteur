@@ -11,6 +11,7 @@ export function Navbar() {
     { to: "/about", label: "À Propos" },
     { to: "/examples", label: "Exemples" },
     { to: "/docs", label: "Documentation" },
+    { to: "/api", label: "API" },
     { to: "/contact", label: "Contact" },
   ];
 
@@ -37,7 +38,7 @@ export function Navbar() {
                   className: `${isCurrent
                     ? "text-indigo-600"
                     : "text-gray-700"
-                    } block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-indigo-600 transition-colors`
+                    } block px-3 py-2 rounded-md text-base font-bold hover:bg-gray-100 hover:text-indigo-600 transition-colors`
                 })}
               >
                 {item.label}

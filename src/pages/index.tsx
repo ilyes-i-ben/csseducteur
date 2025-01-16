@@ -3,6 +3,7 @@ import type { HeadFC, PageProps } from "gatsby"
 import { Link } from "gatsby";
 import { ArrowRight, Sparkles, Zap, PaintBucket } from "lucide-react";
 import { SEO } from "../components/SEO";
+import { CodeBlock } from "../components/CodeBlock";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -127,15 +128,13 @@ const IndexPage: React.FC<PageProps> = () => {
                   <h3 className="text-xl font-semibold text-gray-900  mb-4">
                     Prise en charge du mode sombre
                   </h3>
-                  <pre className="bg-white  rounded-lg p-4 overflow-x-auto">
-                    <code className="text-sm text-gray-800 ">
-                      {`<div class="cs-bg-white cs-">
-<h1 class="cs-text-gray-900 cs-">
-Mode sombre automatique
-</h1>
+                  <CodeBlock
+                    code={`<div class="cs-bg-white cs-">
+  <h1 class="cs-text-gray-900 cs-">
+    Mode sombre automatique
+  </h1>
 </div>`}
-                    </code>
-                  </pre>
+                  />
                 </div>
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
@@ -143,20 +142,18 @@ Mode sombre automatique
                   <h3 className="text-xl font-semibold text-gray-900  mb-4">
                     Design responsive
                   </h3>
-                  <pre className="bg-white  rounded-lg p-4 overflow-x-auto">
-                    <code className="text-sm text-gray-800 ">
-                      {`<div class="cs-grid cs-grid-cols-1 
-cs-md:grid-cols-2 cs-lg:grid-cols-3">
-<!-- Mise en page de grille responsive -->
+                  <CodeBlock
+                    code={`<div class="cs-grid cs-grid-cols-1 cs-md:grid-cols-2 cs-lg:grid-cols-3">
+  <!-- Mise en page de grille responsive -->
+  <h1>Csseducteur est super fun ! :D</h1>
 </div>`}
-                    </code>
-                  </pre>
+                  />
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </main>
+      </main >
     </>
   )
 }

@@ -20,8 +20,8 @@ export default function Introduction() {
                 <h1 className="text-4xl font-bold text-gray-900 ">
                     Introduction
                 </h1>
-                <div className="my-6 p-4 bg-indigo-50  rounded-lg">
-                    <p className="text-indigo-700 ">
+                <div className="my-6 p-4 bg-indigo-50 rounded-lg">
+                    <p className="text-indigo-700 font-bold">
                         CSSeducteur est bien plus qu'un simple framework CSS—c'est une
                         approche élégante du style qui rend votre flux de travail de
                         développement plus fluide et agréable. Avec ses classes utilitaires
@@ -39,7 +39,7 @@ yarn add csseducteur`}
                 />
 
                 <div className="my-4 p-4 bg-gray-50  rounded-lg">
-                    <p className="text-sm text-gray-600 ">
+                    <p className="text-sm text-gray-600 font-bold">
                         💡 CSSeducteur est conçu pour être intuitif et facile à apprendre,
                         tout en offrant des fonctionnalités puissantes pour le développement
                         d'applications web modernes.
@@ -61,7 +61,7 @@ yarn add csseducteur`}
                 />
 
                 <div className="my-4 p-4 bg-gray-50  rounded-lg">
-                    <p className="text-sm text-gray-600 ">
+                    <p className="text-sm text-gray-600 font-bold">
                         ✨ Toutes les classes de CSSeducteur sont préfixées par 'cs-' afin
                         d'éviter les conflits avec d'autres frameworks et de maintenir un
                         code propre et organisé.
