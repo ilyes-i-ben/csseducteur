@@ -37,22 +37,14 @@ const config: GatsbyConfig = {
       },
       __key: "images",
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: "./src/pages/",
-      },
-      __key: "pages",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "blogs",
-        path: "./src/blogs/",
-      },
-      __key: "blogs",
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "pages",
+    //     path: "./src/pages/",
+    //   },
+    //   __key: "pages",
+    // },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
