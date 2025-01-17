@@ -20,6 +20,12 @@ export function SEO({
 
   return (
     <Helmet>
+      {/* Google search console verification */}
+      <meta
+        name="google-site-verification"
+        content="Vr2OMRt0BsMdmjgHXIs54IJN36IeB-Y6fU3H63r16q8"
+      />
+
       <title>{siteTitle}</title>
       <meta name="description" content={description} />
       <meta
@@ -50,10 +56,6 @@ export function SEO({
           url,
         })}
       </script>
-      <meta
-        name="google-site-verification"
-        content="Vr2OMRt0BsMdmjgHXIs54IJN36IeB-Y6fU3H63r16q8"
-      />
     </Helmet>
   );
 }
