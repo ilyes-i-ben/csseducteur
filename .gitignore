@@ -1,11 +1,9 @@
-<<<<<<< Updated upstream
 node_modules/
 .cache/
 public
 src/gatsby-types.d.ts
 src/blogs/
 src/templates/
-=======
 # Logs
 logs
 *.log
@@ -14,9 +12,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
-node_modules
-public
 
 dist
 dist-ssr
@@ -32,9 +27,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-<<<<<<< Updated upstream
 .cache
->>>>>>> Stashed changes
-=======
-.cache
->>>>>>> Stashed changes

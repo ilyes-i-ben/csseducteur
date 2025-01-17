@@ -1,97 +1,224 @@
 import React from "react";
-import { CodeBlock } from "../../components/CodeBlock";
 import { SEO } from "../../components/SEO";
+import { CodeBlock } from "../../components/CodeBlock";
 
-export default function Introduction() {
-    return (
-        <>
-            <SEO
-                title="Documentation - Introduction"
-                description="Commencez avec CSSeducteur, le framework CSS élégant pour le développement web moderne."
-                keywords={[
-                    "CSSeducteur",
-                    "framework CSS",
-                    "documentation",
-                    "démarrer",
-                    "développement web",
-                ]}
+export default function Forms() {
+  return (
+    <>
+      <SEO
+        title="Documentation - Formulaires"
+        description="Créez de beaux formulaires avec les composants et utilitaires de formulaire de CSSeducteur."
+        keywords={[
+          "formulaires",
+          "entrées",
+          "contrôles de formulaire",
+          "framework CSS",
+          "CSSeducteur",
+        ]}
+      />
+      <div className="prose dark:prose-invert max-w-none">
+        <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+          Formulaires
+        </h1>
+
+        <p className="text-lg text-gray-600 dark:text-gray-400">
+          CSSeducteur facilite la création de formulaires élégants et intuitifs
+          grâce à ses utilitaires puissants. Que ce soit pour des contrôles de
+          base ou des mises en page avancées, vous trouverez tout ce dont vous
+          avez besoin.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Contrôles de Formulaire de Base
+        </h2>
+        <div className="not-prose space-y-4 mb-8">
+          <div>
+            <label className="cs-label">Email</label>
+            <input
+              type="email"
+              className="cs-input"
+              placeholder="Entrez votre email"
             />
-            <div className="prose  max-w-none">
-                <h1 className="text-4xl font-bold text-gray-900 ">
-                    Introduction
-                </h1>
-                <div className="my-6 p-4 bg-indigo-50 rounded-lg">
-                    <p className="text-indigo-700 font-bold">
-                        CSSeducteur est bien plus qu'un simple framework CSS—c'est une
-                        approche élégante du style qui rend votre flux de travail de
-                        développement plus fluide et agréable. Avec ses classes utilitaires
-                        et ses composants soigneusement conçus, vous pouvez créer des
-                        interfaces époustouflantes avec un minimum d'effort.
-                    </p>
-                </div>
-
-                <h2 className="text-2xl font-semibold mt-8 mb-4">Démarrage Rapide</h2>
-                <CodeBlock
-                    code={`npm install csseducteur
-# ou
-yarn add csseducteur`}
-                    language="bash"
-                />
-
-                <div className="my-4 p-4 bg-gray-50  rounded-lg">
-                    <p className="text-sm text-gray-600 font-bold">
-                        💡 CSSeducteur est conçu pour être intuitif et facile à apprendre,
-                        tout en offrant des fonctionnalités puissantes pour le développement
-                        d'applications web modernes.
-                    </p>
-                </div>
-
-                <h2 className="text-2xl font-semibold mt-8 mb-4">
-                    Utilisation de Base
-                </h2>
-                <CodeBlock
-                    code={`<div class="cs-container cs-flex cs-items-center cs-justify-between">
-  <h1 class="cs-text-2xl cs-font-bold cs-text-primary">
-    Bonjour, CSSeducteur !
-  </h1>
-  <button class="cs-btn cs-btn-primary">
-    Commencer
-  </button>
+          </div>
+          <div>
+            <label className="cs-label">Mot de passe</label>
+            <input
+              type="password"
+              className="cs-input"
+              placeholder="Entrez votre mot de passe"
+            />
+          </div>
+        </div>
+        <CodeBlock
+          code={`<div>
+  <label class="cs-label">Email</label>
+  <input
+    type="email"
+    class="cs-input"
+    placeholder="Entrez votre email"
+  />
+</div>
+<div>
+  <label class="cs-label">Mot de passe</label>
+  <input
+    type="password"
+    class="cs-input"
+    placeholder="Entrez votre mot de passe"
+  />
 </div>`}
-                />
+        />
 
-                <div className="my-4 p-4 bg-gray-50  rounded-lg">
-                    <p className="text-sm text-gray-600 font-bold">
-                        ✨ Toutes les classes de CSSeducteur sont préfixées par 'cs-' afin
-                        d'éviter les conflits avec d'autres frameworks et de maintenir un
-                        code propre et organisé.
-                    </p>
-                </div>
-
-                <h2 className="text-2xl font-semibold mt-8 mb-4">
-                    Caractéristiques Principales
-                </h2>
-                <ul className="list-disc pl-6 space-y-2">
-                    <li>
-                        Approche utilitaire intuitive avec une nomenclature élégante des
-                        classes
-                    </li>
-                    <li>
-                        Prise en charge du mode sombre sans configuration supplémentaire
-                    </li>
-                    <li>
-                        Utilitaires de conception réactive qui s'adaptent à tous les écrans
-                    </li>
-                    <li>Modèles de composants modernes pour un développement rapide</li>
-                    <li>
-                        Optimisation des performances avec une taille de bundle minimale
-                    </li>
-                    <li>
-                        Styles par défaut magnifiques qui fonctionnent dès la sortie de la
-                        boîte
-                    </li>
-                </ul>
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Mise en Page du Formulaire
+        </h2>
+        <p className="text-gray-600 dark:text-gray-400">
+          Utilisez les classes utilitaires de CSSeducteur pour créer des mises
+          en page de formulaires adaptées à différents scénarios.
+        </p>
+        <div className="not-prose mb-8">
+          <form className="cs-form cs-space-y-6">
+            <div className="cs-grid cs-grid-cols-1 cs-md:grid-cols-2 cs-gap-6">
+              <div>
+                <label className="cs-label">Prénom</label>
+                <input type="text" className="cs-input" placeholder="Jean" />
+              </div>
+              <div>
+                <label className="cs-label">Nom</label>
+                <input type="text" className="cs-input" placeholder="Dupont" />
+              </div>
             </div>
-        </>
-    );
+            <div>
+              <label className="cs-label">Message</label>
+              <textarea
+                className="cs-textarea"
+                rows={4}
+                placeholder="Votre message"
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" className="cs-btn cs-btn-primary">
+                Envoyer
+              </button>
+            </div>
+          </form>
+        </div>
+        <CodeBlock
+          code={`<form class="cs-form cs-space-y-6">
+  <div class="cs-grid cs-grid-cols-1 cs-md:grid-cols-2 cs-gap-6">
+    <div>
+      <label class="cs-label">Prénom</label>
+      <input type="text" class="cs-input" placeholder="Jean" />
+    </div>
+    <div>
+      <label class="cs-label">Nom</label>
+      <input type="text" class="cs-input" placeholder="Dupont" />
+    </div>
+  </div>
+  <div>
+    <label class="cs-label">Message</label>
+    <textarea
+      class="cs-textarea"
+      rows="4"
+      placeholder="Votre message"
+    ></textarea>
+  </div>
+  <div>
+    <button type="submit" class="cs-btn cs-btn-primary">
+      Envoyer
+    </button>
+  </div>
+</form>`}
+        />
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">Contrôles Avancés</h2>
+        <p className="text-gray-600 dark:text-gray-400">
+          CSSeducteur propose également des composants avancés comme des cases à
+          cocher, des boutons radio et des menus déroulants.
+        </p>
+        <div className="not-prose space-y-4 mb-8">
+          <div>
+            <label className="cs-label">Choisissez une option</label>
+            <select className="cs-select">
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+          </div>
+          <div className="cs-flex cs-items-center cs-space-x-4">
+            <label className="cs-label">
+              <input type="checkbox" className="cs-checkbox" /> Accepter les
+              conditions
+            </label>
+          </div>
+          <div className="cs-flex cs-items-center cs-space-x-4">
+            <label className="cs-label">
+              <input type="radio" name="radio" className="cs-radio" /> Option 1
+            </label>
+            <label className="cs-label">
+              <input type="radio" name="radio" className="cs-radio" /> Option 2
+            </label>
+          </div>
+        </div>
+        <CodeBlock
+          code={`<div>
+  <label class="cs-label">Choisissez une option</label>
+  <select class="cs-select">
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+  </select>
+</div>
+<div class="cs-flex cs-items-center cs-space-x-4">
+  <label class="cs-label">
+    <input type="checkbox" class="cs-checkbox" /> Accepter les conditions
+  </label>
+</div>
+<div class="cs-flex cs-items-center cs-space-x-4">
+  <label class="cs-label">
+    <input type="radio" name="radio" class="cs-radio" /> Option 1
+  </label>
+  <label class="cs-label">
+    <input type="radio" name="radio" class="cs-radio" /> Option 2
+  </label>
+</div>`}
+        />
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Conseils d'Accessibilité
+        </h2>
+        <p className="text-gray-600 dark:text-gray-400">
+          CSSeducteur intègre les meilleures pratiques d'accessibilité. Voici
+          quelques conseils pour rendre vos formulaires accessibles à tous :
+        </p>
+        <ul className="list-disc list-inside text-gray-600 dark:text-gray-400">
+          <li>
+            Utilisez toujours des <code>&lt;label&gt;</code> pour vos entrées.
+          </li>
+          <li>Assurez-vous que vos couleurs ont un contraste suffisant.</li>
+          <li>
+            Ajoutez des instructions claires pour les champs obligatoires.
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">Prochaines Étapes</h2>
+        <p className="text-gray-600 dark:text-gray-400">
+          Maintenant que vous maîtrisez les bases des formulaires, explorez nos
+          autres composants et utilitaires pour créer des interfaces complètes
+          et harmonieuses avec CSSeducteur.
+        </p>
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Pourquoi choisir CSSeducteur ?
+        </h2>
+        <p className="text-gray-600 dark:text-gray-400">
+          CSSeducteur n'est pas seulement un outil, c'est une révolution dans la
+          manière dont les formulaires sont conçus. Avec une large gamme de
+          composants, une documentation claire et des options de
+          personnalisation, CSSeducteur est conçu pour rendre vos projets
+          élégants et fonctionnels. Rejoignez la communauté CSSeducteur dès
+          aujourd'hui et découvrez comment cet outil peut transformer vos
+          formulaires !
+        </p>
+      </div>
+    </>
+  );
 }

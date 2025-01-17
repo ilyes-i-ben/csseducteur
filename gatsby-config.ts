@@ -23,6 +23,13 @@ const config: GatsbyConfig = {
         icon: "src/images/icon.png",
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `src/sitemap.xml`, // Le fichier sera généré à la racine
+        createLinkInHead: true, // Cette option ajoute un lien vers le sitemap dans la section <head> de votre site
+      },
+    },
     // {
     //   resolve: "gatsby-transformer-remark",
     //   options: {},
@@ -48,9 +55,9 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        "icon": "src/images/icon.png"
-      }
-    }
+        icon: "src/images/icon.png",
+      },
+    },
   ],
 };
 
