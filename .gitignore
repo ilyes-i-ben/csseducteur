@@ -32,5 +32,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< Updated upstream
+.cache
+>>>>>>> Stashed changes
+=======
 .cache
 >>>>>>> Stashed changes
