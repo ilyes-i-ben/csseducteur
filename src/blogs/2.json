@@ -1,32 +1,56 @@
 {
-    "title": "Correction du Problème de Responsivité du Composant Navbar dans Csseducteur",
-    "slug": "correction-du-probleme-de-responsivite-du-composant-navbar-dans-csseducteur-2",
-    "date": "2025-01-01T00:00:00+00:00",
-    "description": "Découvrez comment corriger les problèmes de responsivité du composant Navbar dans Csseducteur. Cet article fournit des solutions pratiques et des conseils pour optimiser l'expérience utilisateur sur tous les appareils, garantissant ainsi que votre site reste accessible et attrayant. Ne laissez pas les bugs de Navbar nuire à votre projet Csseducteur !",
+    "title": "Guide Pratique pour Améliorer la Responsivité de la Navbar dans Csseducteur",
+    "slug": "guide-pratique-pour-ameliorer-la-responsivite-de-la-navbar-dans-csseducteur",
+    "date": "2025-01-19T00:00:00+00:00",
+    "description": "Un guide complet pour améliorer la responsivité du composant Navbar dans Csseducteur, avec des exemples et des astuces pratiques.",
     "tags": [
-        "docs",
-        "navbar",
-        "bug"
+        "csseducteur",
+        "recherche",
+        "barre-de-recherche",
+        "astuces",
+        "blog"
     ],
     "content": {
-        "question": "Comment corriger le problème de responsivité du composant Navbar dans Csseducteur ?",
-        "snippet": "Dans cet article, nous allons voir comment résoudre un problème courant de responsivité du composant Navbar dans Csseducteur, afin d'assurer une expérience utilisateur optimale sur tous les appareils.",
-        "votes": 755
+        "question": "Peut-on améliorer la responsivité du composant Navbar dans Csseducteur ?",
+        "snippet": "<div class=\"cs-search-bar\">\n    <input type=\"text\" class=\"cs-input cs-border-rounded\" placeholder=\"Rechercher...\">\n    <button class=\"cs-btn cs-btn-primary\">Chercher</button>\n</div>",
+        "steps": [
+            {
+                "title": "Concevoir la Structure de Base",
+                "description": "Utilisez des éléments simples avec des classes Csseducteur comme `cs-input` pour les champs et `cs-btn` pour les boutons."
+            },
+            {
+                "title": "Ajouter des Styles Personnalisés",
+                "description": "Ajoutez un focus interactif pour améliorer l'expérience utilisateur :\n\n```css\n.cs-input:focus {\n    border-color: #007BFF;\n    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);\n}\n```"
+            },
+            {
+                "title": "Optimiser pour Mobile",
+                "description": "Adaptez la largeur du champ de recherche en utilisant des breakpoints Csseducteur comme `cs-width-100` pour les petits écrans."
+            },
+            {
+                "title": "Ajouter une Fonctionnalité Dynamique",
+                "description": "Intégrez JavaScript pour des suggestions en temps réel. Exemple :\n\n```javascript\nconst searchInput = document.querySelector('.cs-input');\nsearchInput.addEventListener('input', (e) => {\n    console.log('Recherche :', e.target.value);\n});\n```"
+            },
+            {
+                "title": "Tester la Compatibilité",
+                "description": "Vérifiez que la barre de recherche fonctionne bien avec des lecteurs d'écran et sur tous les navigateurs populaires."
+            }
+        ],
+        "votes": 1743
     },
     "comments": [
         {
-            "username": "Alice Dupont",
-            "date": "2024-01-12",
-            "comment": "Super article ! Merci pour cette solution. J'avais ce problème avec le bouton et la mise à jour a fonctionné à merveille.",
-            "upvotes": 600,
-            "downvotes": 2
+            "username": "Pierre Lefèvre",
+            "date": "2025-01-15",
+            "comment": "Merci pour ce tutoriel ! Mon site e-commerce n'a jamais eu une barre de recherche aussi intuitive.",
+            "upvotes": 994,
+            "downvotes": 6
         },
         {
-            "username": "Marc Lefevre",
-            "date": "2024-01-13",
-            "comment": "La réponse de Csseducteur a été rapide, mais l'explication sur la mise à jour a été un peu floue. Quelques détails supplémentaires seraient utiles.",
-            "upvotes": 368,
-            "downvotes": 9
+            "username": "Julie Fontaine",
+            "date": "2025-01-16",
+            "comment": "Comment puis-je intégrer un système de suggestion basé sur une API externe ?",
+            "upvotes": 721,
+            "downvotes": 10
         }
     ]
 }

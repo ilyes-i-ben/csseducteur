@@ -44,8 +44,8 @@ export default function BlogIndex({ data }: { data: BlogData }) {
                     <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
                         Bienvenue sur le blog de CSSeducteur ! Ici, vous trouverez des articles, des tutoriels et des meilleures pratiques pour vous aider à tirer le meilleur parti de CSSeducteur dans vos projets web.
                     </p>
-                    <div className="mt-5 sm:flex sm:justify-center md:mt-8 gap-2">
-                        {blogs.map((blog) => (
+                    <div className="mt-5 sm:flex sm:justify-center md:mt-8 gap-2 flex-wrap">
+                        {blogs.map((blog) => ( 
                             <article key={blog.slug} className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" title={blog.title} >
                                 <Link to={`/blogs/${blog.slug}`} title={blog.title}>
                                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{blog.content.question}</h5>

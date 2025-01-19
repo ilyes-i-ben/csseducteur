@@ -1,5 +1,6 @@
 import React from "react";
 import { Github, Twitter, Linkedin } from "lucide-react";
+import { Link } from "gatsby";
 
 export function Footer() {
   return (
@@ -18,28 +19,25 @@ export function Footer() {
             </h3>
             <ul className="mt-4 space-y-4">
               <li>
-                <a href="/docs" className="text-gray-600 hover:text-indigo-500">
+                <Link to="/docs" className="text-gray-600 hover:text-indigo-500">
                   Documentation
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/examples"
+                <Link
+                  to="/examples"
                   className="text-gray-600 hover:text-indigo-500"
                 >
                   Exemples
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/api" className="text-gray-600 hover:text-indigo-500">
+                <Link to="/api" className="text-gray-600 hover:text-indigo-500">
                   API
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#" className="text-gray-600 hover:text-indigo 500">
-                  {" "}
-                  Blog
-                </a>
+                <Link to="/blogs" className="text-gray-600 hover:text-indigo-500">Blogs</Link>
               </li>
             </ul>
           </div>
@@ -81,10 +79,10 @@ export function Footer() {
             <ul className="mt-4 space-y-4">
               <li>
                 <a
-                  href="mailto:contact@csseducteur.com"
+                  href="https://csseducteur.me"
                   className="text-gray-600 hover:text-indigo-500"
                 >
-                  contact@csseducteur.com
+                  contact@csseducteur.me
                 </a>
               </li>
               <li>
