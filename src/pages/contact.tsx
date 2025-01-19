@@ -38,13 +38,13 @@ export default function Contact() {
                         </div>
                         <div className="max-w-lg mx-auto">
                             <form className="p-6 bg-white rounded-lg shadow-sm">
-                                <label className="block mb-2 font-bold" htmlFor="name">Nom</label>
+                                <label className="block mb-2 font-bold">Nom</label>
                                 <input className="w-full px-3 py-2 border rounded" type="text" id="name" name="name" required />
-                                <label className="block mt-4 mb-2 font-bold" htmlFor="email">Email</label>
+                                <label className="block mt-4 mb-2 font-bold">Email</label>
                                 <input className="w-full px-3 py-2 border rounded" type="email" id="email" name="email" required />
-                                <label className="block mt-4 mb-2 font-bold" htmlFor="message">Message</label>
+                                <label className="block mt-4 mb-2 font-bold">Message</label>
                                 <textarea className="w-full px-3 py-2 border rounded" id="message" name="message" rows={5} required></textarea>
-                                <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 my-4" type="submit">Envoyer</button>
+                                <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 my-4">Envoyer</button>
                             </form>
                         </div>
                     </div>

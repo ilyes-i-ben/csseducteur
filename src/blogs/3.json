@@ -1,0 +1,32 @@
+{
+    "title": "Correction du Problème de Responsivité du Composant Navbar dans Csseducteur",
+    "slug": "correction-du-probleme-de-responsivite-du-composant-navbar-dans-csseducteur-3",
+    "date": "2025-01-01T00:00:00+00:00",
+    "description": "Découvrez comment corriger les problèmes de responsivité du composant Navbar dans Csseducteur. Cet article fournit des solutions pratiques et des conseils pour optimiser l'expérience utilisateur sur tous les appareils, garantissant ainsi que votre site reste accessible et attrayant. Ne laissez pas les bugs de Navbar nuire à votre projet Csseducteur !",
+    "tags": [
+        "docs",
+        "navbar",
+        "bug"
+    ],
+    "content": {
+        "question": "Comment corriger le problème de responsivité du composant Navbar dans Csseducteur ?",
+        "snippet": "Dans cet article, nous allons voir comment résoudre un problème courant de responsivité du composant Navbar dans Csseducteur, afin d'assurer une expérience utilisateur optimale sur tous les appareils.",
+        "votes": 755
+    },
+    "comments": [
+        {
+            "username": "Alice Dupont",
+            "date": "2024-01-12",
+            "comment": "Super article ! Merci pour cette solution. J'avais ce problème avec le bouton et la mise à jour a fonctionné à merveille.",
+            "upvotes": 600,
+            "downvotes": 2
+        },
+        {
+            "username": "Marc Lefevre",
+            "date": "2024-01-13",
+            "comment": "La réponse de Csseducteur a été rapide, mais l'explication sur la mise à jour a été un peu floue. Quelques détails supplémentaires seraient utiles.",
+            "upvotes": 368,
+            "downvotes": 9
+        }
+    ]
+}

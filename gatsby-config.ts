@@ -58,6 +58,15 @@ const config: GatsbyConfig = {
         icon: "src/images/icon.png",
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blogs",
+        path: "./src/blogs/",
+      },
+      __key: "data",
+    },
+    "gatsby-transformer-json",
   ],
 };
 

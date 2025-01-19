@@ -1,0 +1,32 @@
+{
+    "title": "Correction du Problème de Responsivité du Composant Navbar dans Csseducteur",
+    "slug": "correction-du-probleme-de-responsivite-du-composant-navbar-dans-csseducteur",
+    "date": "2025-01-01T00:00:00+00:00",
+    "description": "Découvrez comment corriger les problèmes de ...",
+    "tags": [
+        "docs",
+        "navbar",
+        "bug"
+    ],
+    "content": {
+        "question": "Comment corriger le problème de responsivité du composant Navbar dans Csseducteur ?",
+        "snippet": "<div class=\"cs-bg-white cs-\"...",
+        "votes": 755
+    },
+    "comments": [
+        {
+            "username": "Alice Dupont",
+            "date": "2024-01-12",
+            "comment": "Super article ! Merci pour cette solution. J'avais ce problème...",
+            "upvotes": 600,
+            "downvotes": 2
+        },
+        {
+            "username": "Marc Lefevre",
+            "date": "2024-01-13",
+            "comment": "La réponse de Csseducteur a été rapide, mais l'expli...",
+            "upvotes": 368,
+            "downvotes": 9
+        }
+    ]
+}
