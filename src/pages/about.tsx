@@ -23,7 +23,7 @@ export default function About() {
                         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
                             <h1 className="text-center text-4xl tracking-tight font-extrabold text-gray-900  sm:text-5xl md:text-6xl ">
                                 <span className="block">À propos de</span>
-                                <span className="block text-indigo-600 ">
+                                <span className="block text-indigo-600">
                                     CSSeducteur
                                 </span>
                             </h1>

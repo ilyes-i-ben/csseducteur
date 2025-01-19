@@ -11,6 +11,7 @@ export function Navbar() {
     { to: "/about", label: "À Propos" },
     { to: "/examples", label: "Exemples" },
     { to: "/docs", label: "Documentation" },
+    { to: "/blogs", label: "Blogs" },
     { to: "/api", label: "API" },
     { to: "/contact", label: "Contact" },
   ];

@@ -12,7 +12,6 @@ const config: GatsbyConfig = {
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
-    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-google-gtag",
       options: { trackingIds: ["G-DQVZ63QTCW"] },
@@ -21,13 +20,6 @@ const config: GatsbyConfig = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        output: `src/sitemap.xml`, // Le fichier sera généré à la racine
-        createLinkInHead: true, // Cette option ajoute un lien vers le sitemap dans la section <head> de votre site
       },
     },
     // {
@@ -58,6 +50,15 @@ const config: GatsbyConfig = {
         icon: "src/images/icon.png",
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blogs",
+        path: "./src/blogs/",
+      },
+      __key: "data",
+    },
+    "gatsby-transformer-json",
   ],
 };
 
