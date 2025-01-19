@@ -7,129 +7,133 @@ export default function Introduction() {
     <>
       <SEO
         title="Documentation - Introduction"
-        description="Commencez avec CSSeducteur, le framework CSS élégant pour le développement web moderne."
-        keywords={[
-          "CSSeducteur",
-          "framework CSS",
-          "documentation",
-          "démarrer",
-          "développement web",
-          "design réactif",
-          "composants CSS",
-          "performances optimisées",
-        ]}
+        description="Découvrez CSSeducteur, un framework CSS innovant pour des designs web modernes, élégants et performants."
       />
       <div className="prose max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 ">Introduction</h1>
+        <h1 className="text-4xl font-bold text-gray-900">Introduction</h1>
         <div className="my-6 p-4 bg-indigo-50 rounded-lg">
           <p className="text-indigo-700 font-bold">
-            CSSeducteur est bien plus qu'un simple framework CSS—c'est une
-            approche élégante du style qui rend votre flux de travail de
-            développement plus fluide et agréable. Avec ses classes utilitaires
-            et ses composants soigneusement conçus, vous pouvez créer des
-            interfaces époustouflantes avec un minimum d'effort. Il est conçu
-            pour les développeurs modernes qui souhaitent une solution rapide
-            mais efficace pour la création d'applications web élégantes et
-            performantes.
+            Bienvenue dans CSSeducteur, un framework CSS conçu pour les
+            développeurs modernes cherchant à créer des interfaces attrayantes,
+            performantes et adaptables. Ce framework associe simplicité,
+            efficacité et élégance, vous permettant de transformer vos idées en
+            designs captivants sans compromis sur la qualité ou la vitesse de
+            développement.
           </p>
         </div>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">Démarrage Rapide</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Pourquoi choisir CSSeducteur ?
+        </h2>
+        <p>
+          CSSeducteur offre une approche révolutionnaire dans la conception CSS,
+          mettant l'accent sur des classes utilitaires claires et des composants
+          préconstruits. Avec des fonctionnalités modernes et une grande
+          flexibilité, CSSeducteur facilite la création de sites web qui allient
+          esthétique et performance.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Installation Rapide
+        </h2>
         <CodeBlock
           code={`npm install csseducteur
 # ou
 yarn add csseducteur`}
           language="bash"
         />
-
-        <div className="my-4 p-4 bg-gray-50 rounded-lg">
-          <p className="text-sm text-gray-600 font-bold">
-            💡 CSSeducteur est conçu pour être intuitif et facile à apprendre,
-            tout en offrant des fonctionnalités puissantes pour le développement
-            d'applications web modernes. Vous pouvez commencer à l'utiliser
-            immédiatement après l'installation.
-          </p>
-        </div>
+        <p className="mt-4">
+          Une fois installé, vous êtes prêt à explorer un large éventail de
+          classes utilitaires et de composants prédéfinis. CSSeducteur s'intègre
+          parfaitement dans n'importe quel workflow de développement, vous
+          permettant de démarrer rapidement sans configurations complexes.
+        </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">
-          Utilisation de Base
+          Exemple d'Utilisation
         </h2>
         <CodeBlock
           code={`<div class="cs-container cs-flex cs-items-center cs-justify-between">
   <h1 class="cs-text-2xl cs-font-bold cs-text-primary">
-    Bonjour, CSSeducteur !
+    Bienvenue dans CSSeducteur !
   </h1>
   <button class="cs-btn cs-btn-primary">
-    Commencer
+    Démarrer
   </button>
 </div>`}
+          language="html"
         />
-
-        <div className="my-4 p-4 bg-gray-50 rounded-lg">
-          <p className="text-sm text-gray-600 font-bold">
-            ✨ Toutes les classes de CSSeducteur sont préfixées par 'cs-' afin
-            d'éviter les conflits avec d'autres frameworks et de maintenir un
-            code propre et organisé. Ce préfixe garantit également une meilleure
-            lisibilité et facilite l'intégration avec d'autres bibliothèques.
-          </p>
-        </div>
+        <p>
+          Chaque classe commence par le préfixe <code>cs-</code>, assurant une
+          compatibilité maximale avec d'autres bibliothèques ou frameworks. Avec
+          CSSeducteur, vous pouvez créer des designs cohérents tout en
+          maintenant un code organisé et facile à maintenir.
+        </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">
           Caractéristiques Principales
         </h2>
+        <p>
+          CSSeducteur se distingue par ses fonctionnalités innovantes qui
+          simplifient la vie des développeurs tout en offrant des possibilités
+          infinies pour les designers. Parmi ses principales caractéristiques :
+        </p>
         <ul className="list-disc pl-6 space-y-2">
           <li>
-            <strong>Approche utilitaire intuitive</strong> avec une nomenclature
-            élégante des classes, permettant un développement rapide et une
-            personnalisation simple.
+            Composants réactifs prêts à l'emploi, adaptés à tous les appareils.
+          </li>
+          <li>Mode sombre intégré pour une expérience utilisateur moderne.</li>
+          <li>
+            Classes utilitaires flexibles pour un design rapide et efficace.
           </li>
           <li>
-            <strong>Prise en charge du mode sombre</strong> sans configuration
-            supplémentaire, offrant ainsi une expérience utilisateur optimale
-            pour toutes les conditions d'éclairage.
-          </li>
-          <li>
-            <strong>Utilitaires de conception réactive</strong> qui s'adaptent à
-            tous les écrans, garantissant que votre interface reste fluide et
-            agréable sur toutes les résolutions.
-          </li>
-          <li>
-            <strong>Modèles de composants modernes</strong> pour un
-            développement rapide, incluant des boutons, des cartes, des menus et
-            bien plus encore, prêts à être utilisés.
-          </li>
-          <li>
-            <strong>Optimisation des performances</strong> avec une taille de
-            bundle minimale, ce qui permet un temps de chargement plus rapide et
-            une meilleure expérience utilisateur.
-          </li>
-          <li>
-            <strong>Styles par défaut magnifiques</strong> qui fonctionnent dès
-            la sortie de la boîte, vous permettant de créer des designs
-            professionnels sans effort supplémentaire.
+            Options de personnalisation avancées pour répondre aux besoins
+            spécifiques des projets.
           </li>
         </ul>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">
-          Personnalisation Avancée
+          Applications Pratiques
         </h2>
         <p>
-          CSSeducteur vous permet de personnaliser facilement votre expérience
-          de développement. Que ce soit pour ajuster les couleurs, la
-          typographie ou même créer des composants sur mesure, tout est conçu
-          pour être modifiable. Utilisez les fichiers de configuration pour
-          ajuster les valeurs par défaut et adapter le framework à vos besoins
-          spécifiques.
+          CSSeducteur convient à une large gamme de projets web, qu'il s'agisse
+          de sites personnels, d'applications complexes ou de plateformes
+          e-commerce. Avec ses composants intuitifs et ses classes utilitaires,
+          il permet de créer rapidement des interfaces élégantes tout en
+          garantissant une performance optimale.
+        </p>
+        <p>
+          Par exemple, utilisez CSSeducteur pour concevoir des tableaux de bord
+          interactifs, des pages marketing captivantes ou des formulaires
+          intuitifs. Grâce à sa structure modulaire, vous pouvez choisir
+          exactement ce dont vous avez besoin, sans alourdir vos fichiers CSS.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Flexibilité et Personnalisation
+        </h2>
+        <p>
+          CSSeducteur offre une flexibilité sans précédent. Vous pouvez ajuster
+          les palettes de couleurs, les typographies ou les espacements
+          directement depuis le fichier de configuration. Cela permet aux
+          développeurs de s'adapter facilement aux exigences des clients ou aux
+          évolutions des projets.
+        </p>
+        <p>
+          Que vous ayez besoin d'un design minimaliste ou complexe, CSSeducteur
+          fournit les outils nécessaires pour transformer vos idées en réalité.
+          Le framework vous donne un contrôle total sur les styles tout en
+          maintenant une structure cohérente et efficace.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">Conclusion</h2>
         <p>
-          CSSeducteur est la solution parfaite pour les développeurs qui
-          cherchent à créer des interfaces élégantes et réactives sans perdre de
-          temps sur des détails complexes. Grâce à sa simplicité d'utilisation,
-          ses performances optimisées et ses fonctionnalités avancées,
-          CSSeducteur vous permet de vous concentrer sur ce qui compte vraiment
-          : créer des applications web modernes et époustouflantes.
+          CSSeducteur redéfinit les standards des frameworks CSS modernes. Avec
+          ses fonctionnalités avancées, sa facilité d'utilisation et sa
+          documentation détaillée, il devient rapidement un choix incontournable
+          pour les développeurs cherchant à créer des designs professionnels.
+          Essayez CSSeducteur dès aujourd'hui et découvrez comment il peut
+          transformer vos projets web !
         </p>
       </div>
     </>

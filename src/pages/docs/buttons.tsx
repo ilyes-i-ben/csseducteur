@@ -25,7 +25,8 @@ export default function Buttons() {
           Les boutons sont des éléments essentiels dans toute interface
           utilisateur. Avec <strong>CSSeducteur</strong>, vous pouvez facilement
           styliser vos boutons pour qu'ils soient à la fois modernes et
-          fonctionnels. Découvrez comment intégrer ces composants à vos projets.
+          fonctionnels. Découvrez comment intégrer ces composants à vos projets
+          grâce à CSSeducteur.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">Boutons de base</h2>
@@ -107,6 +108,55 @@ export default function Buttons() {
         <p>
           Essayez ces différents styles pour rendre vos interfaces plus
           interactives et engageantes grâce à <strong>CSSeducteur</strong>.
+        </p>
+
+        {/* Nouveaux contenus */}
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Variantes de boutons
+        </h2>
+        <p>
+          Avec <strong>CSSeducteur</strong>, les variantes de boutons permettent
+          d'offrir une flexibilité maximale. Vous pouvez choisir entre des
+          boutons simples, dégradés ou avec des effets d'animation, ce qui
+          facilite leur intégration dans n'importe quel projet.
+        </p>
+        <CodeBlock
+          code={`<button class="cs-btn cs-btn-ghost">Fantôme</button>
+<button class="cs-btn cs-btn-gradient">Dégradé</button>`}
+        />
+        <p>
+          Ces options rendent <strong>CSSeducteur</strong> particulièrement
+          attractif pour les développeurs souhaitant personnaliser leurs
+          interfaces.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Accessibilité et bonnes pratiques
+        </h2>
+        <p>
+          <strong>CSSeducteur</strong> met également l'accent sur
+          l'accessibilité. Tous les boutons sont optimisés pour être utilisés
+          avec des lecteurs d'écran et répondent aux normes ARIA, garantissant
+          une expérience inclusive pour tous les utilisateurs.
+        </p>
+        <p>
+          En suivant les bonnes pratiques fournies par{" "}
+          <strong>CSSeducteur</strong>, vous vous assurez que vos projets sont à
+          la fois performants et respectueux des standards modernes.
+        </p>
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Conclusion : CSSeducteur pour vos projets
+        </h2>
+        <p>
+          Que vous soyez un développeur débutant ou expérimenté,
+          <strong>CSSeducteur</strong> est conçu pour répondre à vos besoins.
+          Grâce à sa simplicité d'utilisation, ses nombreuses options de
+          personnalisation, et son accent sur les bonnes pratiques, il vous
+          permet de réaliser des interfaces de qualité professionnelle.
+        </p>
+        <p>
+          Adoptez <strong>CSSeducteur</strong> dès aujourd'hui pour transformer
+          vos projets en véritables succès !
         </p>
       </div>
     </>
