@@ -8,4 +8,8 @@
         <loc>https://csseducteur.me/api-sitemap.xml</loc>
         <lastmod>2025-01-19</lastmod>
     </sitemap>
+    <sitemap>
+        <loc>https://csseducteur.me/blogs-sitemap.xml</loc>
+        <lastmod>2025-01-19</lastmod>
+    </sitemap>
 </sitemapindex>

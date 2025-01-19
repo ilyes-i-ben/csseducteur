@@ -34,7 +34,7 @@ export default function Navigation() {
   <div class="cs-container cs-mx-auto cs-px-4">
     <div class="cs-flex cs-justify-between cs-items-center cs-h-16">
       <div class="cs-flex-shrink-0">
-        <a href="#" class="cs-text-xl cs-font-bold">Logo</a>
+        <a href="#" class="cs-text-xl cs-font-bold">Csseducteur</a>
       </div>
       <div class="cs-hidden cs-md:block">
         <div class="cs-flex cs-items-center cs-space-x-4">
@@ -86,13 +86,76 @@ export default function Navigation() {
     </li>
     <li class="cs-breadcrumb-separator">/</li>
     <li>
-      <a href="#" class="cs-breadcrumb-link">Produits</a>
+      <a href="# csseducteur" class="cs-breadcrumb-link">Produits</a>
     </li>
     <li class="cs-breadcrumb-separator">/</li>
     <li>
       <span class="cs-breadcrumb-current">Catégorie</span>
     </li>
   </ol>
+</nav>`}
+        />
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Navigation Responsive
+        </h2>
+        <p className="text-lg text-gray-900">
+          Avec CSSeducteur, créer une navigation responsive est simple et
+          rapide. Vous pouvez utiliser les classes utilitaires pour adapter le
+          menu aux différentes tailles d’écran.
+        </p>
+        <CodeBlock
+          code={`<nav class="cs-flex cs-flex-wrap cs-items-center cs-justify-between cs-py-4 cs-px-6 cs-bg-gray-200">
+  <div class="cs-text-xl cs-font-bold">Csseducteur</div>
+  <button class="cs-md:hidden cs-text-gray-900">☰</button>
+  <ul class="cs-hidden cs-md:cs-flex cs-gap-6">
+    <li><a href="#" class="cs-text-gray-900 hover:cs-text-blue-500">Accueil</a></li>
+    <li><a href="#" class="cs-text-gray-900 hover:cs-text-blue-500">À propos</a></li>
+    <li><a href="#" class="cs-text-gray-900 hover:cs-text-blue-500">Services</a></li>
+    <li><a href="#" class="cs-text-gray-900 hover:cs-text-blue-500">Contact</a></li>
+  </ul>
+</nav>`}
+        />
+        <h2 className="text-2xl font-semibold mt-8 mb-4">Navigation Sticky</h2>
+        <p className="text-lg text-gray-900">
+          Une navigation "sticky" reste toujours visible en haut de l'écran, ce
+          qui améliore l'expérience utilisateur. CSSeducteur propose des classes
+          utilitaires pour rendre ce comportement facile à configurer.
+        </p>
+        <CodeBlock
+          code={`<nav class="cs-fixed cs-top-0 cs-w-full cs-bg-white cs-shadow-md cs-py-4 cs-px-6">
+  <div class="cs-text-xl cs-font-bold">Csseducteur</div>
+  <ul class="cs-flex cs-gap-6">
+    <li><a href="#" class="cs-text-gray-900 hover:cs-text-blue-500">Accueil</a></li>
+    <li><a href="#" class="cs-text-gray-900 hover:cs-text-blue-500">À propos</a></li>
+    <li><a href="#" class="cs-text-gray-900 hover:cs-text-blue-500">Services</a></li>
+    <li><a href="#" class="cs-text-gray-900 hover:cs-text-blue-500">Contact</a></li>
+  </ul>
+</nav>`}
+        />
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Navigation avec Dropdown
+        </h2>
+        <p className="text-lg text-gray-900">
+          Les menus déroulants permettent de structurer la navigation pour des
+          sites avec de nombreuses pages. CSSeducteur propose des classes
+          utilitaires qui simplifient la création de dropdowns sans ajouter de
+          styles CSS complexes.
+        </p>
+        <CodeBlock
+          code={`<nav class="cs-flex cs-items-center cs-justify-between cs-py-4 cs-px-6 cs-bg-gray-100">
+  <div class="cs-text-xl cs-font-bold">Csseducteur</div>
+  <ul class="cs-flex cs-gap-6">
+    <li class="cs-relative">
+      <a href="#" class="cs-text-gray-900 hover:cs-text-blue-500">Produits</a>
+      <ul class="cs-absolute cs-hidden hover:cs-block cs-bg-white cs-shadow-md cs-mt-2">
+        <li><a href="#" class="cs-block cs-p-2 hover:cs-bg-gray-100">Produit 1</a></li>
+        <li><a href="#" class="cs-block cs-p-2 hover:cs-bg-gray-100">Produit 2</a></li>
+        <li><a href="#" class="cs-block cs-p-2 hover:cs-bg-gray-100">Produit 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#" class="cs-text-gray-900 hover:cs-text-blue-500">Services</a></li>
+    <li><a href="#" class="cs-text-gray-900 hover:cs-text-blue-500">Contact</a></li>
+  </ul>
 </nav>`}
         />
 
@@ -105,6 +168,41 @@ export default function Navigation() {
           utilisateurs, mais les incitent également à explorer davantage votre
           site. Explorez la documentation pour découvrir d'autres composants de
           navigation et apprendre comment ils peuvent transformer vos projets.
+        </p>
+        <p>
+          Ces options rendent <strong>CSSeducteur</strong> particulièrement
+          attractif pour les développeurs souhaitant personnaliser leurs
+          interfaces avec style.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Accessibilité et bonnes pratiques
+        </h2>
+        <p>
+          <strong>CSSeducteur</strong> met également l'accent sur
+          l'accessibilité. Tous les boutons sont optimisés pour être utilisés
+          avec des lecteurs d'écran et répondent aux normes ARIA, garantissant
+          une expérience inclusive pour tous les utilisateurs.
+        </p>
+        <p>
+          En suivant les bonnes pratiques fournies par{" "}
+          <strong>CSSeducteur</strong>, vous vous assurez que vos projets sont à
+          la fois performants et respectueux des standards modernes.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">
+          Conclusion : CSSeducteur pour vos projets
+        </h2>
+        <p>
+          Que vous soyez un développeur débutant ou expérimenté,
+          <strong>CSSeducteur</strong> est conçu pour répondre à vos besoins.
+          Grâce à sa simplicité d'utilisation, ses nombreuses options de
+          personnalisation, et son accent sur les bonnes pratiques, il vous
+          permet de réaliser des interfaces de qualité professionnelle.
+        </p>
+        <p>
+          Adoptez <strong>CSSeducteur</strong> dès aujourd'hui pour transformer
+          vos projets en véritables succès !
         </p>
       </div>
     </>
