@@ -9,6 +9,7 @@ interface BlogData {
         nodes: {
             slug: string;
             description: string;
+            linkText: string;
             title: string;
             content: {
                 question: string;
@@ -45,7 +46,7 @@ export default function BlogIndex({ data }: { data: BlogData }) {
                         Bienvenue sur le blog de CSSeducteur ! Ici, vous trouverez des articles, des tutoriels et des meilleures pratiques pour vous aider à tirer le meilleur parti de CSSeducteur dans vos projets web.
                     </p>
                     <div className="mt-5 sm:flex sm:justify-center md:mt-8 gap-2 flex-wrap">
-                        {blogs.map((blog) => ( 
+                        {blogs.map((blog) => (
                             <article key={blog.slug} className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" title={blog.title} >
                                 <Link to={`/blogs/${blog.slug}`} title={blog.title}>
                                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{blog.content.question}</h5>
@@ -55,7 +56,7 @@ export default function BlogIndex({ data }: { data: BlogData }) {
                                     {truncateText(blog.description, maxLength)}
                                 </p>
                                 <Link to={`/blogs/${blog.slug}`} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                    Read more
+                                    {blog.linkText}
                                     <ArrowRight className="ml-2" size={20} />
                                 </Link>
                             </article>
@@ -74,6 +75,7 @@ export const query = graphql`
             slug
             description
             title
+            linkText
             content {
                question
             }
