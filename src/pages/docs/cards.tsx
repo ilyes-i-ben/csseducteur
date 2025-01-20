@@ -16,7 +16,7 @@ export default function Cards() {
           "framework CSS",
         ]}
       />
-      <div className="prose  max-w-none">
+      <div className="prose  max-w-">
         <h1 className="text-4xl font-bold text-gray-900 ">
           Cartes CSSeducteur
         </h1>
@@ -46,33 +46,6 @@ export default function Cards() {
   <p class="cs-mt-2">Le contenu de la carte va ici.</p>
 </div>`}
         />
-
-        <h2 className="text-2xl font-semibold mt-8 mb-4">
-          Carte avec une image
-        </h2>
-        <p>
-          Les cartes avec images offrent une meilleure esthétique et sont
-          parfaites pour afficher des visuels accompagnés de descriptions. Grâce
-          à <strong>CSSeducteur</strong>, ces cartes sont faciles à configurer.
-        </p>
-        <div className="not-prose mb-8">
-          <div className="cs-card cs-bg-white cs-rounded-lg cs-shadow-md cs-overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
-              alt="Exemple de carte CSSeducteur"
-              className="cs-w-full cs-h-48 cs-object-cover"
-            />
-            <div className="cs-p-6">
-              <h3 className="cs-text-xl cs-font-semibold">
-                Carte avec une image
-              </h3>
-              <p className="cs-mt-2">
-                Utilisez les cartes <strong>CSSeducteur</strong> pour enrichir
-                vos pages avec des visuels engageants.
-              </p>
-            </div>
-          </div>
-        </div>
         <CodeBlock
           code={`<div class="cs-card cs-bg-white cs-rounded-lg cs-shadow-md cs-overflow-hidden">
   <img
@@ -224,40 +197,6 @@ export default function Cards() {
   <button class="cs-bg-gray-700 cs-text-white cs-px-4 cs-py-2 cs-rounded hover:cs-bg-gray-600">Action</button>
 </div>`}
         />
-
-        <h2 className="text-2xl font-semibold mt-8 mb-4">Carte avec icônes</h2>
-        <p>
-          Les cartes peuvent également inclure des icônes pour un rendu encore
-          plus attractif. Voici un exemple pratique avec{" "}
-          <strong>CSSeducteur</strong> :
-        </p>
-        <div className="not-prose mb-8">
-          <div className="cs-card cs-bg-white cs-rounded-lg cs-shadow-md cs-flex cs-items-center cs-p-6">
-            <span className="cs-bg-indigo-100 cs-p-4 cs-rounded-full">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="cs-h-6 cs-w-6 cs-text-indigo-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 16h-1v-4h-1m1-4h.01M12 18c4.418 0 8-1.79 8-4s-3.582-4-8-4-8 1.79-8 4 3.582 4 8 4z"
-                />
-              </svg>
-            </span>
-            <div className="cs-ml-4">
-              <h3 className="cs-text-xl cs-font-semibold">Carte avec icône</h3>
-              <p className="cs-mt-2">
-                Les icônes avec csseducteur rendent vos cartes plus visuellement
-                attrayantes et adaptées à des informations spécifiques.
-              </p>
-            </div>
-          </div>
-        </div>
         <CodeBlock
           code={`<div class="cs-card cs-bg-white cs-rounded-lg cs-shadow-md cs-flex cs-items-center cs-p-6">
   <span class="cs-bg-indigo-100 cs-p-4 cs-rounded-full">

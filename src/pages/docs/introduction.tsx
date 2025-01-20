@@ -9,7 +9,7 @@ export default function Introduction() {
         title="Documentation - Introduction"
         description="Découvrez CSSeducteur, un framework CSS innovant pour des designs web modernes, élégants et performants."
       />
-      <div className="prose max-w-none">
+      <main className="prose max-w-none">
         <h1 className="text-4xl font-bold text-gray-900">Introduction</h1>
         <div className="my-6 p-4 bg-indigo-50 rounded-lg">
           <p className="text-indigo-700 font-bold">
@@ -154,7 +154,7 @@ yarn run csseducteur"
           Essayez CSSeducteur dès aujourd'hui et découvrez comment il peut
           transformer vos projets web !
         </p>
-      </div>
+      </main>
     </>
   );
 }

@@ -150,6 +150,7 @@ export const query = graphql`
             slug
             tags
             title
+            description
             comments {
                comment
                date

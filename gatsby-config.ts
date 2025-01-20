@@ -13,22 +13,6 @@ const config: GatsbyConfig = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     {
-      resolve: "gatsby-plugin-google-gtag",
-      options: { trackingIds: ["G-DQVZ63QTCW"] },
-    },
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/icon.png",
-      },
-    },
-    // {
-    //   resolve: "gatsby-transformer-remark",
-    //   options: {},
-    // },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
@@ -36,14 +20,6 @@ const config: GatsbyConfig = {
       },
       __key: "images",
     },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     name: "pages",
-    //     path: "./src/pages/",
-    //   },
-    //   __key: "pages",
-    // },
     {
       resolve: "gatsby-plugin-manifest",
       options: {

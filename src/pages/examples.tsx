@@ -1,5 +1,6 @@
 import React from "react";
 import { SEO } from "../components/SEO";
+import { CodeBlock } from "../components/CodeBlock";
 
 export default function Examples() {
   return (
@@ -41,29 +42,29 @@ export default function Examples() {
               <div className="p-6 bg-white rounded-lg shadow-sm">
                 <h3 className="text-lg font-semibold text-gray-900">Carte de Profil</h3>
                 <pre className="bg-gray-50 rounded-lg p-4 overflow-x-auto">
-                  <code className="text-sm text-gray-800">
-                    {`<div class="cs-bg-white cs-p-6 cs-rounded-lg cs-shadow-md">
-  <img class="cs-w-24 cs-h-24 cs-rounded-full cs-mx-auto" src="profile.jpg" alt="Profile Picture">
-  <h2 class="cs-text-center cs-text-2xl cs-font-bold cs-mt-4">John Doe</h2>
-  <p class="cs-text-center cs-text-gray-600">Développeur Web</p>
-</div>`}
-                  </code>
+                  <CodeBlock
+                    code={`<div class="cs-bg-white cs-p-6 cs-rounded-lg cs-shadow-md">
+                      <img class="cs-w-24 cs-h-24 cs-rounded-full cs-mx-auto" src="profile.jpg" alt="Profile Picture">
+                      <h2 class="cs-text-center cs-text-2xl cs-font-bold cs-mt-4">John Doe</h2>
+                      <p class="cs-text-center cs-text-gray-600">Développeur Web</p>
+                    </div>`}
+                  />
                 </pre>
               </div>
               <div className="p-6 bg-white rounded-lg shadow-sm">
                 <h3 className="text-lg font-semibold text-gray-900">Formulaire de Contact</h3>
                 <pre className="bg-gray-50 rounded-lg p-4 overflow-x-auto">
-                  <code className="text-sm text-gray-800">
-                    {`<form class="cs-bg-white cs-p-6 cs-rounded-lg cs-shadow-md">
-  <label class="cs-block cs-mb-2 cs-font-bold" for="name">Nom</label>
-  <input class="cs-w-full cs-px-3 cs-py-2 cs-border cs-rounded" type="text" id="name" name="name">
-  <label class="cs-block cs-mt-4 cs-mb-2 cs-font-bold" for="email">Email</label>
-  <input class="cs-w-full cs-px-3 cs-py-2 cs-border cs-rounded" type="email" id="email" name="email">
-  <label class="cs-block cs-mt-4 cs-mb-2 cs-font-bold" for="message">Message</label>
-  <textarea class="cs-w-full cs-px-3 cs-py-2 cs-border cs-rounded" id="message" name="message"></textarea>
-  <button class="cs-btn cs-btn-primary cs-mt-4">Envoyer</button>
-</form>`}
-                  </code>
+                  <CodeBlock
+                    code={`<form class="cs-bg-white cs-p-6 cs-rounded-lg cs-shadow-md">
+                      <label class="cs-block cs-mb-2 cs-font-bold" for="name">Nom</label>
+                      <input class="cs-w-full cs-px-3 cs-py-2 cs-border cs-rounded" type="text" id="name" name="name">
+                      <label class="cs-block cs-mt-4 cs-mb-2 cs-font-bold" for="email">Email</label>
+                      <input class="cs-w-full cs-px-3 cs-py-2 cs-border cs-rounded" type="email" id="email" name="email">
+                      <label class="cs-block cs-mt-4 cs-mb-2 cs-font-bold" for="message">Message</label>
+                      <textarea class="cs-w-full cs-px-3 cs-py-2 cs-border cs-rounded" id="message" name="message"></textarea>
+                      <button class="cs-btn cs-btn-primary cs-mt-4">Envoyer</button>
+                    </form>`}
+                  />
                 </pre>
               </div>
             </div>
