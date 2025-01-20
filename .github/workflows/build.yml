@@ -73,6 +73,11 @@ jobs:
         env:
           PREFIX_PATHS: 'true'
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
+      - name: Create _headers file
+        run: |
+          echo "/*.js\n  Cache-Control: public, max-age=31536000, immutable\n" >> public/_headers
+          echo "/*.css\n  Cache-Control: public, max-age=31536000, immutable\n" >> public/_headers
+          echo "/static/*\n  Cache-Control: public, max-age=31536000, immutable\n" >> public/_headers
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

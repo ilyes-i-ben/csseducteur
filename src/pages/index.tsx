@@ -145,7 +145,6 @@ const IndexPage: React.FC<PageProps> = () => {
                   </h3>
                   <CodeBlock
                     code={`<div class="cs-grid cs-grid-cols-1 cs-md:grid-cols-2 cs-lg:grid-cols-3">
-  <!-- Mise en page de grille responsive -->
   <h1>Csseducteur est super fun ! :D</h1>
 </div>`}
                   />
