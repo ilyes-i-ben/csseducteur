@@ -71,7 +71,6 @@ fetch('https://csseducteur.me/api/v1/resource')
   })
   .then(data => console.log(data))
   .catch(error => console.error("Un problème est survenu lors de l'opération fetch :", error));`}
-                    language="javascript"
                 />
                 <p>
                     Dans cet exemple :

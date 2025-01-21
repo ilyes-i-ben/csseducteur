@@ -36,7 +36,6 @@ export default function ApiEndpoints() {
 fetch('https://csseducteur.me/api/v1/resources')
   .then(response => response.json())
   .then(data => console.log(data));`}
-                    language="javascript"
                 />
                 <p>
                     <strong>Paramètres :</strong> Ce point de terminaison de CSSeducteur ne nécessite pas de paramètres supplémentaires pour fonctionner.
@@ -63,7 +62,6 @@ fetch('https://csseducteur.me/api/v1/resources', {
 })
   .then(response => response.json())
   .then(data => console.log(data));`}
-                    language="javascript"
                 />
                 <p>
                     <strong>Paramètres :</strong>
@@ -92,7 +90,6 @@ fetch('https://csseducteur.me/api/v1/resources/1', {
 })
   .then(response => response.json())
   .then(data => console.log(data));`}
-                    language="javascript"
                 />
                 <p>
                     <strong>Paramètres :</strong>
@@ -123,7 +120,6 @@ fetch('https://csseducteur.me/api/v1/resources/1', {
 })
   .then(response => response.json())
   .then(data => console.log(data));`}
-                    language="javascript"
                 />
                 <p>
                     <strong>Paramètres :</strong>
@@ -157,7 +153,6 @@ fetch('https://csseducteur.me/api/v1/resources/1', {
     if (response.ok) console.log('Resource deleted successfully');
     else console.error('Failed to delete the resource');
   });`}
-                    language="javascript"
                 />
                 <p>
                     <strong>Paramètres :</strong>

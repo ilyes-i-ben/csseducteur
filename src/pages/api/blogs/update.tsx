@@ -22,7 +22,6 @@ export default function UpdateBlog() {
                 <h2 className="text-2xl font-semibold mt-8 mb-4">Point de Terminaison</h2>
                 <CodeBlock
                     code={`PUT /blogs/:id`}
-                    language="http"
                 />
                 <p>
                     Le point de terminaison <code>/blogs/:id</code> est une requête PUT qui met à jour l'objet blog avec l'<code>id</code> spécifié dans CSSeducteur.
@@ -44,7 +43,6 @@ export default function UpdateBlog() {
 })
   .then(response => response.json())
   .then(data => console.log(data));`}
-                    language="javascript"
                 />
 
                 <h2 className="text-2xl font-semibold mt-8 mb-4">Corps de la Requête</h2>
@@ -54,7 +52,6 @@ export default function UpdateBlog() {
   "content": "This is the updated content of the blog.",
   "author": "New Author Name"
 }`}
-                    language="json"
                 />
                 <p>
                     Le corps de la requête pour mettre à jour un blog dans CSSeducteur doit inclure :
@@ -74,7 +71,6 @@ export default function UpdateBlog() {
   "author": "New Author Name",
   "updatedAt": "2025-01-02T00:00:00Z"
 }`}
-                    language="json"
                 />
                 <p>
                     La réponse de CSSeducteur contient l'objet blog mis à jour, y compris :

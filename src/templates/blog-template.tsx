@@ -89,7 +89,6 @@ const BlogTemplate = ({ data }: { data: BlogData }) => {
                <h3 className="text-2xl font-semibold mt-8 mb-4 text-blue-600">Aperçu</h3>
                <CodeBlock
                   code={content.snippet}
-                  language="javascript"
                />
 
                <h3 className="text-2xl font-semibold mt-8 mb-4 text-blue-600">Étapes</h3>

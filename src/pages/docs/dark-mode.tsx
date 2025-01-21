@@ -54,7 +54,6 @@ export default function DarkMode() {
           code={`const toggleDarkMode = () => {
   document.documentElement.classList.toggle('dark');
 };`}
-          language="javascript"
         />
         <p className="text-gray-600 dark:text-gray-400">
           En attachant cette fonction à un bouton, vous pouvez offrir une
@@ -64,7 +63,6 @@ export default function DarkMode() {
           code={`<button onClick={toggleDarkMode} class="cs-btn cs-dark:cs-btn-light">
   Basculer le mode
 </button>`}
-          language="html"
         />
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">Préférence Système</h2>
@@ -78,7 +76,6 @@ export default function DarkMode() {
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   document.documentElement.classList.add('dark');
 }`}
-          language="javascript"
         />
         <p className="text-gray-600 dark:text-gray-400">
           Cette approche garantit que votre application respecte les choix de

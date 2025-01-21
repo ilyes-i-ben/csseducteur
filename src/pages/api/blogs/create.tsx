@@ -20,7 +20,6 @@ export default function CreateBlog() {
                 <h2 className="text-2xl font-semibold mt-8 mb-4">Point de Terminaison CSSeducteur</h2>
                 <CodeBlock
                     code={`POST /blogs`}
-                    language="http"
                 />
                 <p>
                     Le point de terminaison <code>/blogs</code> est une requête POST qui accepte un payload JSON avec les détails du nouveau <strong>blog</strong> pour <strong>CSSeducteur</strong>.
@@ -40,7 +39,6 @@ export default function CreateBlog() {
 })
 .then(response => response.json())
 .then(data => console.log(data));`}
-                    language="javascript"
                 />
                 <h2 className="text-2xl font-semibold mt-8 mb-4">Corps de la Requête pour CSSeducteur</h2>
                 <CodeBlock
@@ -49,7 +47,6 @@ export default function CreateBlog() {
   "content": "This is the content of the new blog.",
   "author": "Author Name"
 }`}
-                    language="json"
                 />
                 <p>
                     Le corps de la requête pour <strong>CSSeducteur</strong> doit inclure :
@@ -68,7 +65,6 @@ export default function CreateBlog() {
   "author": "Author Name",
   "createdAt": "2025-01-01T00:00:00Z"
 }`}
-                    language="json"
                 />
                 <p>
                     La réponse de <strong>CSSeducteur</strong> contient l'objet du <strong>blog</strong> nouvellement créé, comprenant :

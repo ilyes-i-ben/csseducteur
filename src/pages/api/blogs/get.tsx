@@ -24,7 +24,6 @@ export default function GetBlog() {
                 <h2 className="text-2xl font-semibold mt-8 mb-4">Point de Terminaison API CSSeducteur</h2>
                 <CodeBlock
                     code={`GET /blogs/:id`}
-                    language="http"
                 />
                 <p>
                     Utilisez le point de terminaison <code>/blogs/:id</code> pour obtenir des informations détaillées sur un blog spécifique de <strong>CSSeducteur</strong>.
@@ -35,7 +34,6 @@ export default function GetBlog() {
                     code={`fetch('https://csseducteur.me/api/blogs')
   .then(response => response.json())
   .then(data => console.log(data));`}
-                    language="javascript"
                 />
                 <p>
                     Ce code illustre comment récupérer les données d'un blog via l'API CSSeducteur. Vous pouvez utiliser cet exemple pour tester rapidement l'intégration.
@@ -49,7 +47,6 @@ export default function GetBlog() {
   "author": "Author Name",
   "createdAt": "2025-01-01T00:00:00Z"
 }`}
-                    language="json"
                 />
                 <p>
                     Les données retournées par l'API CSSeducteur comprennent :

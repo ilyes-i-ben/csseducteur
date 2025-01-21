@@ -40,7 +40,6 @@ export default function Introduction() {
           code={`npm install csseducteur
 # ou
 yarn add csseducteur`}
-          language="bash"
         />
         <h2 className="text-2xl font-semibold mt-4">
           Importation Rapide de Csseducteur
@@ -48,7 +47,6 @@ yarn add csseducteur`}
         <CodeBlock
           code={`// importation du framework Csseducteur
         @import 'csseducteur';`}
-          language="scss"
         />
 
         <h2 className="text-2xl font-semibold mt-4">
@@ -59,7 +57,6 @@ yarn add csseducteur`}
 npm run csseducteur
 # ou 
 yarn run csseducteur"
-          language="bash"
         />
         <p className="mt-4">
           Une fois installé, vous êtes prêt à explorer un large éventail de
@@ -80,7 +77,6 @@ yarn run csseducteur"
     Démarrer
   </button>
 </div>`}
-          language="html"
         />
         <p>
           Chaque classe commence par le préfixe <code>cs-</code>, assurant une

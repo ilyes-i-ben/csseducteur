@@ -69,7 +69,6 @@ fetch('https://csseducteur.me/api/v1/resources', {
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));`}
-                    language="javascript"
                 />
                 <p>
                     Remplacez <code>YOUR_API_KEY</code> par votre clé API réelle. Cet exemple montre une requête <code>GET</code>, qui récupère une liste de ressources.
@@ -97,7 +96,6 @@ fetch('https://csseducteur.me/api/v1/resources', {
     }
   ]
 }`}
-                    language="json"
                 />
                 <p>
                     La réponse inclut généralement :

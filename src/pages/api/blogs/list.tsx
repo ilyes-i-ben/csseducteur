@@ -21,7 +21,7 @@ export default function ListBlogs() {
                     Exploitez ce point de terminaison pour enrichir vos applications avec les capacités puissantes de blogging offertes par CSSeducteur.
                 </p>
                 <h2 className="text-2xl font-semibold mt-8 mb-4">Point de Terminaison</h2>
-                <CodeBlock code={`GET /blogs`} language="http" />
+                <CodeBlock code={`GET /blogs`} />
                 <p>
                     Le point de terminaison <code>/blogs</code> est une requête <strong>GET</strong> qui retourne un tableau d'objets blogs provenant de la base de données CSSeducteur.
                     Conçu pour fournir un accès rapide et fiable, ce point de terminaison vous permet d'explorer facilement tout le contenu de blogs hébergé sur la plateforme CSSeducteur.
@@ -31,7 +31,6 @@ export default function ListBlogs() {
                     code={`fetch('https://api.csseducteur.com/v1/blogs')
   .then(response => response.json())
   .then(data => console.log(data));`}
-                    language="javascript"
                 />
                 <p>
                     Avec seulement quelques lignes de code, vous pouvez utiliser l'API CSSeducteur pour récupérer et exploiter les données des blogs dans vos projets.
@@ -61,7 +60,6 @@ export default function ListBlogs() {
   "limit": 10,
   "offset": 0
 }`}
-                    language="json"
                 />
                 <p>
                     La réponse de l'API <strong>CSSeducteur</strong> contient un tableau d'objets blogs. Chaque objet inclut des détails importants comme :

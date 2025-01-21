@@ -59,7 +59,6 @@ fetch('https://csseducteur.me/api/v1/resource', {
 })
   .then(response => response.json())
   .then(data => console.log(data));`}
-                    language="javascript"
                 />
                 <p>
                     Dans cet exemple :
