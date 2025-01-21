@@ -81,7 +81,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-200 pt-8">
-          <p className="text-center text-gray-400">
+          <p className="text-center text-gray-900">
             © {new Date().getFullYear()} CSSeducteur. All rights reserved.
           </p>
         </div>

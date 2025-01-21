@@ -21,16 +21,6 @@ const config: GatsbyConfig = {
       __key: "images",
     },
     {
-      resolve: 'gatsby-plugin-netlify',
-      options: {
-        headers: {
-          '/*.js': ['Cache-Control: public, max-age=31536000, immutable'],
-          '/*.css': ['Cache-Control: public, max-age=31536000, immutable'],
-          '/static/*': ['Cache-Control: public, max-age=31536000, immutable'],
-        },
-      },
-    },
-    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
