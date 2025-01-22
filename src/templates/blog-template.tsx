@@ -43,25 +43,6 @@ const BlogTemplate = ({ data }: { data: BlogData }) => {
                <ArrowLeft className="w-6 h-6 mr-2 text-indigo-600" />
                Retour aux <span className="text-indigo-600 font-bold">&nbsp;blogs</span>
             </Link>
-            {/* <header className="bg-gradient-to-r from-blue-700 to-blue-500 py-12 shadow-md">
-               <div className="container mx-auto text-center">
-                  <h1 className="text-4xl font-extrabold tracking-wide drop-shadow-md">{title}</h1>
-                  <p className="text-md mt-3 italic">Publié le {new Date(date).toLocaleDateString("fr-FR")}</p>
-                  <div className="bg-white p-6 rounded-lg shadow-lg">
-                     <h2 className="sr-only">Tags</h2>
-                     <div className="flex flex-wrap gap-2 text-indigo-600">
-                        {tags.map((tag: string) => (
-                           <span
-                              key={tag}
-                              className="bg-blue-200 hover:bg-blue-300 text-blue-800 py-1 px-3 rounded-full text-sm font-medium cursor-pointer">
-                              #{tag}
-                           </span>
-                        ))}
-                     </div>
-                  </div>
-               </div>
-            </header> */}
-
             <header className="bg-gradient-to-r from-blue-700 to-blue-500 py-12 shadow-md">
                <div className="container mx-auto text-center relative">
                   <h1 className="text-4xl font-extrabold tracking-wide drop-shadow-md">{title}</h1>

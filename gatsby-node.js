@@ -4,7 +4,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     const { data } = await graphql(`
         query BlogsQuery {
-            allBlogsJson {
+            allBlogsJson(sort: {content: {question: ASC}}) {
                 nodes {
                     id
                     slug
